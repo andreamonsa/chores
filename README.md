@@ -1,15 +1,19 @@
 # Chores
 
 A one-page site that tells you whose turn it is to clean the house this week.
-No backend, no database — it's pure math based on today's date, so it stays
-correct forever with zero maintenance.
+An NFC tag stuck in the kitchen points to this page, so anyone can just tap
+their phone on it to check. No backend, no database — it's pure math based on
+today's date, so it stays correct forever with zero maintenance.
 
 ## How it works
 
+- An NFC tag in the kitchen holds this page's URL. Tapping a phone on it
+  opens the page directly in the browser — no app required to read it.
 - Weeks run Monday–Sunday.
 - `config.js` has a `START_DATE` (a Monday) and an `ORDER` list of names.
 - The page figures out how many weeks have passed since `START_DATE` and
   cycles through `ORDER` to find this week's person. It repeats forever.
+- It also shows last week's cleaner, as a reminder in case anyone missed it.
 
 ## Editing the rotation
 
