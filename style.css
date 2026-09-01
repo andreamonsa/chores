@@ -1,0 +1,116 @@
+:root {
+  --bg: #0f1115;
+  --card: #1a1d24;
+  --accent: #5fb3f7;
+  --text: #f2f3f5;
+  --muted: #9aa1ac;
+  --border: #2a2e37;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding: 24px;
+}
+
+main {
+  width: 100%;
+  max-width: 420px;
+}
+
+.eyebrow {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.current-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 36px 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.current-label {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.current-name {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 8px;
+  line-height: 1.15;
+}
+
+.current-range {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.upcoming {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.upcoming h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0;
+  padding: 14px 18px 8px;
+}
+
+.upcoming ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 18px 14px;
+}
+
+.upcoming li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+}
+
+.upcoming li:first-child {
+  border-top: none;
+}
+
+.upcoming .name {
+  font-weight: 600;
+}
+
+.upcoming .range {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 20px;
+}
