@@ -38,6 +38,11 @@ function render() {
   document.getElementById("current-name").textContent = currentPerson;
   document.getElementById("current-range").textContent = formatRange(thisMonday);
 
+  const lastWeekMonday = addDays(thisMonday, -7);
+  const lastWeekPerson = personForWeek(currentWeekIndex - 1);
+  document.getElementById("last-week").textContent =
+    `Last week (${formatRange(lastWeekMonday)}): ${lastWeekPerson}`;
+
   const list = document.getElementById("upcoming-list");
   list.innerHTML = "";
   for (let i = 1; i <= ORDER.length; i++) {
