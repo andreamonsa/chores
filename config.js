@@ -3,7 +3,7 @@
 
 // The Monday that starts the very first turn in ORDER[0].
 // Must be a Monday, format YYYY-MM-DD.
-const START_DATE = "2026-08-31";
+const START_DATE = "2026-09-21";
 
 // Cleaning order, repeats forever in this sequence.
-const ORDER = ["Federico", "Andre Monsa", "Andre Biondi"];
+const ORDER = ["Andre Biondi", "Federico", "Andre Monsa"];
